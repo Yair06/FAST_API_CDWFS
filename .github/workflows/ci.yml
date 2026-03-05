@@ -47,3 +47,4 @@ jobs:
             docker stop app_flask_yair || true
             docker rm app_flask_yair || true
             docker run -d --name app_flask_yair -p 3005:8000 ${{ secrets.DOCKERHUB_USERNAME }}/app_flask_yair:latest
+
